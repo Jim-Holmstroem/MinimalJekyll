@@ -28,4 +28,14 @@ layout: default
     </ul>
 
     site.data.folder.file: {{ site.data.folder.file }}
+
+    <p>site.data.authors: {{ site.data.authors }}</p>
+    <ul>
+        {% for author in site.data.authors %}
+            <li>
+                {{ author[1].name }} (key: {{author[0]}})
+            </li>
+        {% endfor %}
+    </ul>
+
 </div>
