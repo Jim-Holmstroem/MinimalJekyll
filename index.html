@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="home">
-    Home
+    <h1>Home</h1>
     <ul class="post-list">
         {% for post in site.posts %}
             <li>
@@ -12,4 +12,18 @@ layout: default
     </ul>
 
     <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <hr>
+
+    <h1>site.data.*</h1>
+    <p style="color:{{ site.data.color.primary }};">data.color.primary</p>
+    <p>{{ site.data.strings.string }}</p>
+
+    site.data.members:
+    <ul>
+        {% for member in site.data.members %}
+            <li>
+                {{ member.name }}
+            </li>
+        {% endfor %}
+    </ul>
 </div>
