@@ -18,7 +18,7 @@ layout: default
     <p style="color:{{ site.data.color.primary }};">data.color.primary</p>
     <p>{{ site.data.strings.string }}</p>
 
-    site.data.members:
+    site.data.members (#members={{ site.data.members | size }}):
     <ul>
         {% for member in site.data.members %}
             <li>
@@ -26,4 +26,6 @@ layout: default
             </li>
         {% endfor %}
     </ul>
+
+    site.data.folder.file: {{ site.data.folder.file }}
 </div>
