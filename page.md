@@ -18,7 +18,7 @@ B
 
 C
 ---
-A [link](www.duckduckgo.com)
+A [link](http://www.duckduckgo.com)
 
 ~~~
 def f():
