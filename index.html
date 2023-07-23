@@ -12,6 +12,7 @@ layout: default
     </ul>
 
     <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p class="page">Page <a href="{{ "/page" | prepend: site.baseurl }}">page</a></p>
     <hr>
 
     <h1>site.data.*</h1>
@@ -37,5 +38,11 @@ layout: default
             </li>
         {% endfor %}
     </ul>
+    <p>Categories: {{ site.categories }}</p>
+    <ul>
+        <li><a href="{{ site.baseurl }}{% link categories/category-a.md %}">category-a</a></li>
+        <li><a href="{{ site.baseurl }}{% link categories/category-b.md %}">category-b</a></li>
+    </ul>
+
 
 </div>
